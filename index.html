@@ -12,11 +12,11 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIj4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNSIgZmlsbD0iIzI2YTY5YSIgc3Ryb2tlPSIjMDA2OTVjIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cGF0aCBkPSJNOCAyMCBMMjQgMjAgTDIyIDEyIEwxMCAxMiBaIiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSJub25lIi8+CiAgPHBhdGggZD0iTTEwIDEyIEwxMiA4IEwyMCA4IEwyMiAxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0xMiAxNCBMMjAgMTQiIHN0cm9rZT0iIzI2YTY5YSIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjciLz4KICA8cGF0aCBkPSJNMTEgMTYgTDIxIDE2IiBzdHJva2U9IiMyNmE2OWEiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC43Ii8+CiAgPGNpcmNsZSBjeD0iMTEiIGN5PSIyMSIgcj0iMiIgZmlsbD0id2hpdGUiLz4KICA8Y2lyY2xlIGN4PSIyMSIgY3k9IjIxIiByPSIyIiBmaWxsPSJ3aGl0ZSIvPgogIDxjaXJjbGUgY3g9IjExIiBjeT0iMjEiIHI9IjEiIGZpbGw9IiMyNmE2OWEiLz4KICA8Y2lyY2xlIGN4PSIyMSIgY3k9IjIxIiByPSIxIiBmaWxsPSIjMjZhNjlhIi8+Cjwvc3ZnPg==">
-    <meta name="theme-color" content="#1e3a8a">
+    <meta name="theme-color" content="#388ef5">
     
     <!-- SEO -->
     <meta name="description" content="Auto Glass Center in San Diego: windshield replacement and auto glass repair. Same-day service, certified technicians, free quotes. Serving Mira Mesa, Scripps Ranch, Poway.">
-    <meta name="keywords" content="auto glass san diego, windshield replacement san diego, windshield repair san diego, auto glass repair, car window replacement, ADAS calibration, mobile auto glass, Mira Mesa, Scripps Ranch, Rancho Bernardo, Poway, Carmel Mountain">
+    <meta name="keywords" content="auto glass san diego, windshield replacement san diego, windshield repair san diego, auto glass repair, car window replacement, ADAS calibration, Mira Mesa, Scripps Ranch, Rancho Bernardo, Poway, Carmel Mountain">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph -->
@@ -93,11 +93,17 @@
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">San Diego's Trusted Auto Glass Experts</h1>
-                    <h2 class="hero-subtitle">Professional Windshield Replacement & Repair</h2>
+                    <h2 class="hero-subtitle">Windshield Replacement & Repair</h2>
                     
                     <div class="hero-description">
-                        <p>✓ 500+ Five-Star Reviews ✓ 50 Years in the industry ✓ All Makes & Models</p>
-                        <p>Fast, Professional Service • Free Estimates</p>
+                        <p>✓ 500+ Five-Star Reviews • ✓ 50 Years in the industry • ✓ All Makes & Models</p>
+                        <p>Fast, professional service • Free estimates</p>
+                    </div>
+
+                    <div class="hero-badges">
+                        <div class="badge"><i class="fas fa-star"></i> 500+ five-star reviews</div>
+                        <div class="badge"><i class="fas fa-bolt"></i> same-day service</div>
+                        <div class="badge"><i class="fas fa-shield-alt"></i> lifetime workmanship warranty</div>
                     </div>
                     
                     <div class="hero-buttons">
@@ -110,6 +116,104 @@
                                 <i class="fas fa-map-marker-alt"></i> Get Directions
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Bar -->
+        <section class="trust-bar">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-item"><i class="fas fa-check"></i> 50+ Years Experience</div>
+                    <div class="trust-item"><i class="fas fa-star"></i> 500+ Five-Star Reviews</div>
+                    <div class="trust-item"><i class="fas fa-shield-alt"></i> Licensed & Insured</div>
+                    <div class="trust-item"><i class="fas fa-camera"></i> ADAS Calibration</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Quote Starter -->
+        <section class="quick-quote-section">
+            <div class="container">
+                <div class="quick-quote-card">
+                    <div class="quick-quote-header">
+                        <h2>Get a Fast, Free Quote</h2>
+                        <p>We reply within ~30 minutes during business hours</p>
+                    </div>
+                    <form id="quick-quote-form" class="quick-quote-form" method="GET" action="quote.html">
+                        <input type="hidden" name="adas" id="qq-adas-hidden" value="0">
+                        <div class="qq-row">
+                            <div class="form-group">
+                                <label for="qq-name">Name*:</label>
+                                <input type="text" id="qq-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="qq-phone">Phone*:</label>
+                                <input type="tel" id="qq-phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="qq-vehicle">Vehicle (Year / Make / Model):</label>
+                                <input type="text" id="qq-vehicle" name="notes" placeholder="2019 Toyota Camry">
+                            </div>
+                            <div class="qq-submit">
+                                <button type="submit" class="btn btn-primary">Continue</button>
+                            </div>
+                        </div>
+                        <div class="qq-helper">
+                            <p>Free estimates. No obligation.</p>
+                            <label class="qq-checkbox">
+                                <input type="checkbox" id="qq-adas"> Vehicle has ADAS (cameras/sensors)
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="home-services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Expert Auto Glass Services</h2>
+                    <p class="section-tagline">What we do</p>
+                </div>
+                <div class="home-services-grid">
+                    <div class="service-card">
+                        <h3>Windshield Replacement</h3>
+                        <ul>
+                            <li>OEM / Aftermarket</li>
+                            <li>Same-day service</li>
+                            <li>Perfect fit guarantee</li>
+                        </ul>
+                        <a href="services.html" class="learn-more-btn">Learn more</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Windshield Repair</h3>
+                        <ul>
+                            <li>Chip / Crack ~30 min</li>
+                            <li>Prevents spread</li>
+                            <li>Cost-effective</li>
+                        </ul>
+                        <a href="services.html" class="learn-more-btn">Learn more</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>ADAS Calibration</h3>
+                        <ul>
+                            <li>Camera recalibration</li>
+                            <li>Safety features OK</li>
+                            <li>Post-install check</li>
+                        </ul>
+                        <a href="services.html" class="learn-more-btn">Learn more</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Side / Rear Glass</h3>
+                        <ul>
+                            <li>Doors, rear, quarter</li>
+                            <li>Power windows</li>
+                            <li>All makes / models</li>
+                        </ul>
+                        <a href="services.html" class="learn-more-btn">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -139,7 +243,39 @@
             </div>
         </section>
 
-        <!-- Reviews Section -->
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p class="section-tagline">Fast and easy from start to finish</p>
+                </div>
+                <div class="process-grid">
+                    <div class="process-card">
+                        <div class="process-number">1</div>
+                        <h3>Contact</h3>
+                        <p>Tell us about your vehicle and damage.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-number">2</div>
+                        <h3>Schedule</h3>
+                        <p>Pick a time that works for you.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-number">3</div>
+                        <h3>Expert Install</h3>
+                        <p>Certified techs, premium materials.</p>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-number">4</div>
+                        <h3>Quality Check</h3>
+                        <p>Final inspection and cleanup.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section (Carousel) -->
         <section class="reviews-section">
             <div class="container">
                 <div class="reviews-header">
@@ -150,33 +286,70 @@
                         <p>Based on <strong>500+ reviews</strong></p>
                     </div>
                 </div>
-                
-                <div class="reviews-grid">
-                    <div class="review-card">
-                        <div class="reviewer-info">
-                            <strong>jay aww</strong>
-                            <span class="review-date">2025-01-15</span>
+                <div class="reviews-carousel">
+                    <button class="reviews-prev" aria-label="Previous reviews">‹</button>
+                    <div class="reviews-track">
+                        <div class="review-card">
+                            <div class="reviewer-info">
+                                <strong>jay aww</strong>
+                                <span class="review-date">2025-01-15</span>
+                            </div>
+                            <div class="trustindex">Trustindex verifies that the original source of the review is Google.</div>
+                            <p>I Highly Recommended Auto Glass Center for windshield repair. They are exceptional kind and reasonable price windshield replacement. Second time returning customer in need to replace my windshield due to a rock hit my windshield again lol. Pete is very kind and patience and fix my windshield sounds issues after the installation. THANKS PETE!</p>
                         </div>
-                        <div class="trustindex">Trustindex verifies that the original source of the review is Google.</div>
-                        <p>I Highly Recommended Auto Glass Center for windshield repair. They are exceptional kind and reasonable price windshield replacement. Second time returning customer in need to replace my windshield due to a rock hit my windshield again lol. Pete is very kind and patience and fix my windshield sounds issues after the installation. THANKS PETE!</p>
+                        <div class="review-card">
+                            <div class="reviewer-info">
+                                <strong>Tyler Stickler</strong>
+                                <span class="review-date">2025-01-08</span>
+                            </div>
+                            <div class="trustindex">Trustindex verifies that the original source of the review is Google.</div>
+                            <p>2nd time at the shop. Excellent communication, customer service, and pricing. Super quick and well done both times. Big thanks to your friendly team!</p>
+                        </div>
+                        <div class="review-card">
+                            <div class="reviewer-info">
+                                <strong>RCC C</strong>
+                                <span class="review-date">2025-01-03</span>
+                            </div>
+                            <div class="trustindex">Trustindex verifies that the original source of the review is Google.</div>
+                            <p>called at 7am In the morning spoke to Pete. I got a quote nobody could beat. Where everybody else was 60$ to $100 more. They were sociable polite and I even got a front windshield with a tint which is even better and it only took an hour and half this place is A+ my dodge nitro never looked so good!!!!</p>
+                        </div>
                     </div>
-                    
-                    <div class="review-card">
-                        <div class="reviewer-info">
-                            <strong>Tyler Stickler</strong>
-                            <span class="review-date">2025-01-08</span>
+                    <button class="reviews-next" aria-label="Next reviews">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map & Areas -->
+        <section class="map-areas-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Service Areas & Location</h2>
+                    <p class="section-tagline">Visit us in Mira Mesa</p>
+                </div>
+                <div class="map-areas-grid">
+                    <div class="map-card">
+                        <div class="map-embed">
+                            <iframe src="https://www.google.com/maps?q=9630+Black+Mountain+Rd+%23K,+San+Diego,+CA+92126&output=embed" width="100%" height="100%" style="border:0; min-height: 320px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="trustindex">Trustindex verifies that the original source of the review is Google.</div>
-                        <p>2nd time at the shop. Excellent communication, customer service, and pricing. Super quick and well done both times. Big thanks to your friendly team!</p>
                     </div>
-                    
-                    <div class="review-card">
-                        <div class="reviewer-info">
-                            <strong>RCC C</strong>
-                            <span class="review-date">2025-01-03</span>
+                    <div class="areas-card">
+                        <h3>Auto Glass Center</h3>
+                        <p>9630 Black Mountain Rd. #K<br>San Diego, CA 92126</p>
+                        <p class="hours">Hours: 8:00 AM - 4:30 PM, 7 days a week</p>
+                        <div class="cta-buttons" style="margin-top: 10px;">
+                            <a href="tel:+18582164300" class="btn btn-outline-blue">Call</a>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=9630+Black+Mountain+Rd+%23K+San+Diego+CA+92126" target="_blank" class="btn btn-tertiary"><i class="fas fa-map-marker-alt"></i> Directions</a>
                         </div>
-                        <div class="trustindex">Trustindex verifies that the original source of the review is Google.</div>
-                        <p>called at 7am In the morning spoke to Pete. I got a quote nobody could beat. Where everybody else was 60$ to $100 more. They were sociable polite and I even got a front windshield with a tint which is even better and it only took an hour and half this place is A+ my dodge nitro never looked so good!!!!</p>
+                        <ul class="areas-pills">
+                            <li>Mira Mesa</li>
+                            <li>Scripps Ranch</li>
+                            <li>Poway</li>
+                            <li>Carmel Mountain</li>
+                            <li>Rancho Bernardo</li>
+                            <li>UTC / La Jolla</li>
+                            <li>Rancho Peñasquitos</li>
+                            <li>Sorrento Valley</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -248,6 +421,15 @@
         <i class="fas fa-chevron-up"></i>
         Go to Top
     </button>
+
+    <!-- Mobile Sticky Action Bar -->
+    <div class="sticky-actions">
+        <div class="bar">
+            <a href="quote.html" class="primary">Get Quote</a>
+            <a href="tel:+18582164300">Call</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=9630+Black+Mountain+Rd+%23K+San+Diego+CA+92126" target="_blank">Directions</a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

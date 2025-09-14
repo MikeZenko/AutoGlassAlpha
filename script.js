@@ -99,6 +99,49 @@ document.addEventListener('DOMContentLoaded', function() {
             navToggle.classList.toggle('open');
         });
     }
+
+    // Prefill quote form from query params (quote.html)
+    try {
+        const params = new URLSearchParams(window.location.search);
+        const page = window.location.pathname.split('/').pop();
+        if (page === 'quote.html' || page === 'quote') {
+            const map = {
+                name: document.getElementById('name'),
+                phone: document.getElementById('phone'),
+                notes: document.getElementById('notes')
+            };
+            if (map.name && params.get('name')) map.name.value = params.get('name');
+            if (map.phone && params.get('phone')) map.phone.value = params.get('phone');
+            if (map.notes) {
+                const notesPieces = [];
+                if (params.get('notes')) notesPieces.push(params.get('notes'));
+                const adas = params.get('adas');
+                if (adas === '1' || adas === 'true') notesPieces.push('[ADAS indicated]');
+                if (notesPieces.length) map.notes.value = notesPieces.join(' ');
+            }
+        }
+    } catch (e) {
+        // fail silently
+    }
+
+    // Quick-quote ADAS hidden input sync (index.html)
+    const qqAdas = document.getElementById('qq-adas');
+    const qqAdasHidden = document.getElementById('qq-adas-hidden');
+    if (qqAdas && qqAdasHidden) {
+        qqAdas.addEventListener('change', function() {
+            qqAdasHidden.value = this.checked ? '1' : '0';
+        });
+    }
+
+    // Reviews carousel controls
+    const track = document.querySelector('.reviews-track');
+    const prev = document.querySelector('.reviews-prev');
+    const next = document.querySelector('.reviews-next');
+    if (track && prev && next) {
+        const scrollAmount = 320;
+        prev.addEventListener('click', function() { track.scrollBy({ left: -scrollAmount, behavior: 'smooth' }); });
+        next.addEventListener('click', function() { track.scrollBy({ left: scrollAmount, behavior: 'smooth' }); });
+    }
 });
 
 // Old form submission handler removed - Formspree handles all form processing
