@@ -447,6 +447,29 @@ body {
     box-shadow: 0 8px 25px rgba(16, 185, 129, 0.35);
 }
 
+/* Increase contrast for hero buttons so they pop over the blue overlay */
+.hero .btn-primary {
+    background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+    border: 2px solid rgba(255,255,255,0.9);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.45);
+}
+
+.hero .btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
+    box-shadow: 0 10px 30px rgba(30, 58, 138, 0.55);
+}
+
+.hero .btn-tertiary {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    border: 2px solid rgba(255,255,255,0.9);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.45);
+}
+
+.hero .btn-tertiary:hover {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.55);
+}
+
 .btn-tertiary i {
     margin-right: 8px;
 }
